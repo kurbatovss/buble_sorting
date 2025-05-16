@@ -18,7 +18,7 @@ public class Bubble_sorting {
             System.out.print(arik[i] + " ");
         }
     }
-    private static void sortArray(int[] arik) {
+    private static int[] sortArray(int[] arik) {
         for (int i = 1; i < arik.length; i++) {
             for ( int j = 0; j < arik.length-1; j++) {
                 if ( arik[j] > arik[j+1] ) {
@@ -28,5 +28,6 @@ public class Bubble_sorting {
                 }
             }
         }
+        return arik;
     }
 }
